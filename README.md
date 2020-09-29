@@ -36,4 +36,4 @@ module.exports = {
 
 Use the `plugins` option to enable/disable and configure
 [svgo plugins](https://github.com/svg/svgo#what-it-can-do). The expected format
-is `Array<{ pluginName: boolean | Record<string, unknown>}>`.
+is `Array<{ [pluginName: string]: boolean | Record<string, unknown>}>`.
