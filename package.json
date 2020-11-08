@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/svgo-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "repository": "git@github.com:stefanprobst/svgo-loader.git",
   "author": "Stefan Probst <stefanprobst@kolabnow.com>",
