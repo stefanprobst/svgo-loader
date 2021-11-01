@@ -1,4 +1,5 @@
 const path = require('path')
+
 const { createFsFromVolume, Volume } = require('memfs')
 const webpack = require('webpack')
 
@@ -34,8 +35,12 @@ module.exports = function compiler(fixture, options = {}) {
 
   return new Promise((resolve, reject) => {
     compiler.run((err, stats) => {
-      if (err) reject(err)
-      if (stats.hasErrors()) reject(new Error(stats.toJson().errors))
+      if (err) {
+        reject(err)
+      }
+      if (stats.hasErrors()) {
+        reject(new Error(stats.toJson().errors))
+      }
 
       resolve(stats)
     })
